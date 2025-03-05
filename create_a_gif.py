@@ -14,6 +14,7 @@ images = []
  # Set a standard size (width, height)
 target_size = (500, 300) 
 
+# Loop through and resize
 for file in filenames:
     img = Image.open(file).convert("RGBA")  # Open image and ensure consistent mode
     img_resized = img.resize(target_size)  # Resize image to target dimensions
